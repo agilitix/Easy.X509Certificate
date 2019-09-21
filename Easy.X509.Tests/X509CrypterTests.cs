@@ -13,7 +13,7 @@ namespace Easy.X509.Tests
     internal class X509CrypterTests
     {
         [Test]
-        public void Given_text_should_encrypt_and_decrypt()
+        public void Text_should_encrypt_and_decrypt_with_certificate()
         {
             string certificateFile = Path.Combine(TestContext.CurrentContext.TestDirectory, "certificate.pfx");
 
@@ -29,7 +29,7 @@ namespace Easy.X509.Tests
         }
 
         [Test]
-        public void Given_text_should_be_signed_then_verified_as_signed()
+        public void Text_should_be_signed_then_verified_as_signed()
         {
             string certificateFile = Path.Combine(TestContext.CurrentContext.TestDirectory, "certificate.pfx");
 
